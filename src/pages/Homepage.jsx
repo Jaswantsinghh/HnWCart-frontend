@@ -1,11 +1,18 @@
 import { Header, Navbar, NavbarActions } from "../components/General";
-import { Carousel, ProductCard } from "../components/Homepage";
+import { Carousel, ProductCard, Category } from "../components/Homepage";
 import { RightArrow } from "../assets/icons";
 import product1 from "../assets/img/product1.png";
 import product2 from "../assets/img/product2.png";
 import product3 from "../assets/img/product3.png";
 import product4 from "../assets/img/product4.png";
 import product5 from "../assets/img/product5.png";
+import category1 from "../assets/img/category1.png";
+import category2 from "../assets/img/category2.png";
+import category3 from "../assets/img/category3.png";
+import category4 from "../assets/img/category4.png";
+import category5 from "../assets/img/category5.png";
+import category6 from "../assets/img/category6.png";
+import category7 from "../assets/img/category7.png";
 
 export const Homepage = () => {
     const products = [
@@ -58,6 +65,38 @@ export const Homepage = () => {
             "mrp": "₹7499"
         }
     ];
+
+    const categories = [
+        {
+            "image": category1,
+            "name": "Protein Powder"
+        },
+        {
+            "image": category2,
+            "name": "Multivitamins"
+        },
+        {
+            "image": category3,
+            "name": "Body Oil"
+        },
+        {
+            "image": category4,
+            "name": "Creatine"
+        },
+        {
+            "image": category5,
+            "name": "Protein Bar"
+        },
+        {
+            "image": category6,
+            "name": "Ayurveda & Herbs"
+        },
+        {
+            "image": category7,
+            "name": "Healthy Snacks"
+        },
+    ]
+
     return(
         <div className="homepage">
             <Header />
@@ -95,6 +134,31 @@ export const Homepage = () => {
                             );
                         })
                     }
+                    </div>
+                </div>
+                <div className="homepage-content-top-categories">
+                    <div className="homepage-content-top-categories-title">
+                        <div className="homepage-content-top-categories-title-name">
+                            Shop From
+                            <span className="homepage-content-top-categories-title-description"> Top Categories</span>
+                        </div>
+                        <div className="homepage-content-top-categories-title-view-all">
+                            View All <RightArrow className="homepage-content-top-categories-title-view-all-icon"/>
+                        </div>
+                    </div>
+                    <div className="homepage-content-top-categories-underline">
+                        <div className="homepage-content-top-categories-underline-overlap"></div>
+                    </div>
+                    <div className="homepage-content-top-categories-products">
+                        {categories.map((category, index) => {
+                            return(
+                                <Category
+                                image={category.image}
+                                name={category.name}
+                                key={index}
+                                />
+                            );
+                        })}
                     </div>
                 </div>
             </div>

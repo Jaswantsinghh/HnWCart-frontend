@@ -5,6 +5,7 @@
         padding: 100px 120px;
 
         &-bestseller {
+            margin-bottom: 120px;
 
             &-title {
                 font-weight: 700;
@@ -37,7 +38,7 @@
                 width: 100%;
                 background: #EDEDED;
                 margin-top: 15px;
-                margin-bottom: 15px;
+                margin-bottom: 40px;
 
                 &-overlap {
                     height: 1px;
@@ -47,6 +48,56 @@
             }
 
             &-products {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &-top-categories {
+
+            &-title {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 30px;
+                display: flex;
+                justify-content: space-between;
+
+                &-name {
+                    color: rgba(102, 102, 102, 1);
+                }
+
+                &-description {
+                    color: rgba(147, 118, 45, 1);
+                }
+
+                &-view-all {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 18px;              
+                    text-align: right;
+                    color: #222222;
+                    cursor: pointer;
+                }
+            }
+
+            &-underline {
+                height: 1px;
+                width: 100%;
+                background: #EDEDED;
+                margin-top: 15px;
+                margin-bottom: 40px;
+
+                &-overlap {
+                    height: 1px;
+                    width: 25%;
+                    border-top: 3px solid #93762D;
+                }
+            }
+
+            &-products {
+                margin-top: 40px;
                 display: flex;
                 justify-content: space-between;
             }
