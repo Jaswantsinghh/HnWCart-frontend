@@ -1,4 +1,5 @@
 import { Header, Navbar, NavbarActions } from "../components/General";
+import { Carousel } from "../components/Homepage";
 
 export const Homepage = () => {
     return(
@@ -6,6 +7,7 @@ export const Homepage = () => {
             <Header />
             <Navbar />
             <NavbarActions />
+            <Carousel />
         </div>
     );
 }

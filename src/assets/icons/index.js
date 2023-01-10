@@ -7,3 +7,5 @@ export { default as User } from './user';
 export { default as Cart } from './cart';
 export { default as ThreeLines } from './threeLines';
 export { default as DownArrow } from './downArrow';
+export { default as LeftArrow } from './leftArrow';
+export { default as RightArrow } from './rightArrow';
