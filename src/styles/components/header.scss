@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(102, 102, 102, 1);
+    font-size: 14px;
+    padding: 0 120px;
+    padding-bottom: 14px;
+
+    &-action-items {
+        display: flex;
+        justify-content: space-between;
+        
+        &-item {
+            padding: 0 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            
+            &.border {
+                border-right: 1px solid #93762D;
+                border-left: 1px solid #93762D;
+            }
+        }
+    }
+}
