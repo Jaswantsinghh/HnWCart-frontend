@@ -5,3 +5,5 @@ export { default as Search } from './search';
 export { default as Menu } from './menu';
 export { default as User } from './user';
 export { default as Cart } from './cart';
+export { default as ThreeLines } from './threeLines';
+export { default as DownArrow } from './downArrow';
