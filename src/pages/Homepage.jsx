@@ -13,6 +13,9 @@ import category4 from "../assets/img/category4.png";
 import category5 from "../assets/img/category5.png";
 import category6 from "../assets/img/category6.png";
 import category7 from "../assets/img/category7.png";
+import brand1 from "../assets/img/brand1.png";
+import brand2 from "../assets/img/brand2.png";
+import brand3 from "../assets/img/brand3.png";
 
 export const Homepage = () => {
     const products = [
@@ -159,6 +162,45 @@ export const Homepage = () => {
                                 />
                             );
                         })}
+                    </div>
+                </div>
+                <div className="homepage-content-top-brands">
+                    <div className="homepage-content-top-brands-title">
+                        <div className="homepage-content-top-brands-title-name">
+                            Top
+                            <span className="homepage-content-top-brands-title-description"> Health Brands</span>
+                        </div>
+                        <div className="homepage-content-top-brands-title-view-all">
+                            View All <RightArrow className="homepage-content-top-brands-title-view-all-icon"/>
+                        </div>
+                    </div>
+                    <div className="homepage-content-top-brands-underline">
+                        <div className="homepage-content-top-brands-underline-overlap"></div>
+                    </div>
+                    <div className="homepage-content-top-brands-products">
+                        <div className="homepage-content-top-brands-products-brand">
+                            <img src={brand1} alt="brand1" className="homepage-content-top-brands-products-brand-image"/>
+                        </div>
+                        <div className="homepage-content-top-brands-products-brand">
+                            <img src={brand2} alt="brand2" className="homepage-content-top-brands-products-brand-image"/>
+                        </div>
+                        <div className="homepage-content-top-brands-products-brand">
+                            <img src={brand3} alt="brand3" className="homepage-content-top-brands-products-brand-image"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="homepage-content-blogs">
+                    <div className="homepage-content-top-brands-title">
+                        <div className="homepage-content-top-brands-title-name">
+                            Read our 
+                            <span className="homepage-content-top-brands-title-description"> BLOGs</span>
+                        </div>
+                        <div className="homepage-content-top-brands-title-view-all">
+                            View All <RightArrow className="homepage-content-top-brands-title-view-all-icon"/>
+                        </div>
+                    </div>
+                    <div className="homepage-content-top-brands-underline">
+                        <div className="homepage-content-top-brands-underline-overlap"></div>
                     </div>
                 </div>
             </div>
