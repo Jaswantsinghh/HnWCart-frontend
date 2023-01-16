@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Homepage } from './pages/Homepage';
+import { Login } from './pages/Login';
 import "@fontsource/montserrat/400.css"; // Weight 400.
 import "@fontsource/montserrat/700.css";
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Homepage />,
   },
+  {
+    path: "/login",
+    element: <Login />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

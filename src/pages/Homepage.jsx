@@ -1,5 +1,5 @@
-import { Header, Navbar, NavbarActions } from "../components/General";
-import { Carousel, ProductCard, Category } from "../components/Homepage";
+import { Header, Navbar, NavbarActions, Footer } from "../components/General";
+import { Carousel, ProductCard, Category, BlogCard } from "../components/Homepage";
 import { RightArrow } from "../assets/icons";
 import product1 from "../assets/img/product1.png";
 import product2 from "../assets/img/product2.png";
@@ -16,6 +16,12 @@ import category7 from "../assets/img/category7.png";
 import brand1 from "../assets/img/brand1.png";
 import brand2 from "../assets/img/brand2.png";
 import brand3 from "../assets/img/brand3.png";
+import blog1 from "../assets/img/blog1.png";
+import blog2 from "../assets/img/blog2.png";
+import blog3 from "../assets/img/blog3.png";
+import blog4 from "../assets/img/blog4.png";
+import blog5 from "../assets/img/blog5.png";
+import blog6 from "../assets/img/blog6.png";
 
 export const Homepage = () => {
     const products = [
@@ -99,7 +105,39 @@ export const Homepage = () => {
             "name": "Healthy Snacks"
         },
     ]
-
+    
+    const blogs = [
+        {
+            "image": blog1,
+            "category": "Bodybuilding",
+            "title": "Which protein is right for you?",
+        },
+        {
+            "image": blog2,
+            "category": "Healthy Diet",
+            "title": "Get ready for 60 days New Year Challenge",
+        },
+        {
+            "image": blog3,
+            "category": "Bodybuilding",
+            "title": "5 Things to consider while choosing the right GYM...",
+        },
+        {
+            "image": blog4,
+            "category": "Bodybuilding",
+            "title": "9 Excersises to explore for bigger biceps",
+        },
+        {
+            "image": blog5,
+            "category": "Heathy Lifestyle",
+            "title": "This is what you should do when you wake up...",
+        },
+        {
+            "image": blog6,
+            "category": "Healthy Diet",
+            "title": "Are MultiVitamins necessary for Healthy Diet?",
+        }
+    ];
     return(
         <div className="homepage">
             <Header />
@@ -190,20 +228,33 @@ export const Homepage = () => {
                     </div>
                 </div>
                 <div className="homepage-content-blogs">
-                    <div className="homepage-content-top-brands-title">
-                        <div className="homepage-content-top-brands-title-name">
+                    <div className="homepage-content-blogs-title">
+                        <div className="homepage-content-blogs-title-name">
                             Read our 
-                            <span className="homepage-content-top-brands-title-description"> BLOGs</span>
+                            <span className="homepage-content-blogs-title-description"> BLOGs</span>
                         </div>
-                        <div className="homepage-content-top-brands-title-view-all">
-                            View All <RightArrow className="homepage-content-top-brands-title-view-all-icon"/>
+                        <div className="homepage-content-blogs-title-view-all">
+                            View All <RightArrow className="homepage-content-blogs-title-view-all-icon"/>
                         </div>
                     </div>
-                    <div className="homepage-content-top-brands-underline">
-                        <div className="homepage-content-top-brands-underline-overlap"></div>
+                    <div className="homepage-content-blogs-underline">
+                        <div className="homepage-content-blogs-underline-overlap"></div>
+                    </div>
+                    <div className="homepage-content-blogs-blogs">
+                        {blogs.map((blog, index) => {
+                            return(
+                                <BlogCard
+                                image={blog.image}
+                                category={blog.category}
+                                title={blog.title}
+                                key={index}
+                                />
+                            );
+                        })}
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
