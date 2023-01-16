@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { Homepage } from './pages/Homepage';
 import { Login } from './pages/Login';
+import { Product } from './pages/Product';
 import "@fontsource/montserrat/400.css"; // Weight 400.
 import "@fontsource/montserrat/700.css";
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/product",
+    element: <Product />,
   }
 ]);
 

@@ -1,6 +1,6 @@
-export const ProductCard = ({ image, name, price, quantity, description, isDiscount, discount, mrp}) => {
+export const ProductCard = ({ image, name, price, quantity, description, isDiscount, discount, mrp, onClick }) => {
     return(
-        <div className="product-card">
+        <div className="product-card" onClick={onClick}>
             {isDiscount && 
             <div className="product-card-overlay">
                 <div className="product-card-overlay-discount">

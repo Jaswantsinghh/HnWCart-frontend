@@ -9,3 +9,6 @@ export { default as ThreeLines } from './threeLines';
 export { default as DownArrow } from './downArrow';
 export { default as LeftArrow } from './leftArrow';
 export { default as RightArrow } from './rightArrow';
+export { default as Plus } from './plus';
+export { default as FilledStar } from './filledStar';
+export { default as UnfilledStar } from './unfilledStar';

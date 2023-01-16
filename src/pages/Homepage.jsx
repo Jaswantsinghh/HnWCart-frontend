@@ -1,6 +1,7 @@
 import { Header, Navbar, NavbarActions, Footer } from "../components/General";
 import { Carousel, ProductCard, Category, BlogCard } from "../components/Homepage";
 import { RightArrow } from "../assets/icons";
+import { useNavigate } from "react-router-dom";
 import product1 from "../assets/img/product1.png";
 import product2 from "../assets/img/product2.png";
 import product3 from "../assets/img/product3.png";
@@ -24,6 +25,7 @@ import blog5 from "../assets/img/blog5.png";
 import blog6 from "../assets/img/blog6.png";
 
 export const Homepage = () => {
+    const navigate = useNavigate();
     const products = [
         {
             "image": product1,
@@ -170,7 +172,8 @@ export const Homepage = () => {
                                     isDiscount={product.isDiscount} 
                                     discount={product.discount} 
                                     mrp={product.mrp} 
-                                    key={index} 
+                                    key={index}
+                                    onClick={() => navigate('/product')}
                                 />
                             );
                         })
