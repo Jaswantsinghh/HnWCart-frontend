@@ -33,7 +33,8 @@ export const Homepage = () => {
             "price": "₹3999",
             "quantity": "1kg",
             "description": "38 orders in the last 1 hour!!",
-            "isDiscount": false
+            "isDiscount": false,
+            "link": "/product/1"
         },
         {
             "image": product2,
@@ -43,7 +44,8 @@ export const Homepage = () => {
             "description": "Save - ₹1500",
             "isDiscount": true,
             "discount": "38% OFF",
-            "mrp": "₹3999"
+            "mrp": "₹3999",
+            "link": "/product/2"
         },
         {
             "image": product3,
@@ -53,7 +55,8 @@ export const Homepage = () => {
             "description": "Save - ₹2000",
             "isDiscount": true,
             "discount": "25% OFF",
-            "mrp": "₹7999"
+            "mrp": "₹7999",
+            "link": "/product/3"
         },
         {
             "image": product4,
@@ -63,7 +66,8 @@ export const Homepage = () => {
             "description": "Save - ₹2000",
             "isDiscount": true,
             "discount": "36% OFF",
-            "mrp": "₹5499"
+            "mrp": "₹5499",
+            "link": "/product/4"
         },
         {
             "image": product5,
@@ -73,7 +77,8 @@ export const Homepage = () => {
             "description": "Save - ₹2500",
             "isDiscount": true,
             "discount": "33% OFF",
-            "mrp": "₹7499"
+            "mrp": "₹7499",
+            "link": "/product/5"
         }
     ];
 
@@ -173,7 +178,7 @@ export const Homepage = () => {
                                     discount={product.discount} 
                                     mrp={product.mrp} 
                                     key={index}
-                                    onClick={() => navigate('/product')}
+                                    onClick={() => navigate(product.link)}
                                 />
                             );
                         })

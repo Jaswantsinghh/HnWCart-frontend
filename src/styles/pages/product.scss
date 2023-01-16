@@ -28,6 +28,8 @@
                 box-shadow: 0px 97px 39px rgba(0, 0, 0, 0.01), 0px 54px 33px rgba(0, 0, 0, 0.03), 0px 24px 24px rgba(0, 0, 0, 0.04), 0px 6px 13px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
                 border-radius: 16px;
                 width: 600px;
+                height: fit-content;
+                margin-bottom: 24px;
 
                 &-main {
                     width: 100%;
@@ -49,12 +51,14 @@
                     align-items: center;
                     border-radius: 0px 0px 15px 15px;
                     padding: 16px;
+                    gap: 12px;
 
                     &-image {
                         width: 144px;
                         height: 144px;
                         object-fit: cover;
                         border-radius: 8px;
+
 
                         &:hover {
                             cursor: pointer;
@@ -212,6 +216,166 @@
                             color: #FFFFFF;
                         }
                     }
+                }
+                &-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    padding: 20px 0;
+
+                    &-buying {
+                        display: flex;
+                        gap: 12px;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        &-cart {
+                            border: 1px solid #93762D;
+                            border-radius: 7px;
+                            padding: 18px 53px;
+                            font-weight: 500;
+                            font-size: 28px;
+                            line-height: 18px;
+                            text-align: center;
+                            color: #249B3E;
+                            cursor: pointer;
+                            width: 50%;
+
+                            &:hover {
+                                border: 2px solid #93762D;
+                            }
+                        }
+
+                        &-buy {
+                            background: #93762D;
+                            border: 1px solid #93762D;
+                            border-radius: 7px;
+                            cursor: pointer;
+                            padding: 18px 53px;
+                            font-weight: 500;
+                            font-size: 28px;
+                            line-height: 18px;
+                            /* identical to box height, or 64% */
+                            text-align: center;
+                            width: 50%;
+                            color: #FFFFFF;
+
+                            &:hover {
+                                border: 2px solid #93762D;
+                            }
+                        }
+                    }
+
+                    &-review {
+                        border: 1px solid #93762D;
+                        border-radius: 7px;
+                        padding: 18px 53px;
+                        font-weight: 500;
+                        font-size: 28px;
+                        line-height: 18px;
+                        text-align: center;
+                        color: #249B3E;
+                        cursor: pointer;
+
+                        &:hover {
+                            border: 2px solid #93762D;
+                        }
+                    }
+
+                    &-reviews {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 12px;
+
+                        &-review {
+                            border: 1px solid #93762D;
+                            border-radius: 7px;
+                            padding: 9px;
+
+                            &-name {
+                                display: flex;
+                                
+                                &-text {
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    color: #249B3E;
+                                    border-right: 2px solid #249B3E;
+                                    padding-right: 4px;
+                                }
+
+                                &-time {
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    color: #249B3E;
+                                    padding-left: 4px;
+                                }
+                            }
+
+                            &-rating {
+                                display: flex;
+                                align-items: center;
+                                padding: 16px 0;
+                                gap: 6px;
+
+                                &-stars {
+                                    display: flex;
+                                    gap: 2px;
+                                }
+
+                                &-text {
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    /* identical to box height, or 150% */
+
+
+                                    color: #249B3E;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+
+                            &-text {
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 18px;
+                                /* or 150% */
+                                                        
+                                                        
+                                color: #249B3E;
+                            }
+                        }
+
+                        &-more {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                            /* identical to box height, or 129% */
+                            text-align: center;
+                            text-decoration-line: underline;
+                            color: #249B3E;
+                            padding: 28px 0;
+                        }
+                    }
+                }
+            }
+
+            &-description {
+                font-size: 16px;
+                line-height: 32px;
+                /* or 197% */            
+                color: #000000;
+                padding-bottom: 42px;
+
+                h1 {
+                    font-size: 16px;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: bold;
                 }
             }
         }
