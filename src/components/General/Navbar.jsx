@@ -4,6 +4,15 @@ import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
     const navigate = useNavigate();
+    const isAuthenticated = localStorage.getItem("isAuthenticated");
+    const onButtonClick = () => {
+        if (isAuthenticated) {
+            localStorage.removeItem("isAuthenticated");
+            navigate("/login");
+        } else {
+            navigate("/login");
+        }
+    }
     return(
         <div className="navbar">
             <div className="navbar-logo" onClick={() => navigate('/')}>
@@ -16,9 +25,9 @@ export const Navbar = () => {
                 </div>
                 <Menu />
             </div>
-            <div className="navbar-login" onClick={() => navigate('/login')}>
+            <div className="navbar-login" onClick={onButtonClick}>
                 <User />
-                Login
+                {isAuthenticated ? "Logout" : "Login"}
             </div>
             <div className="navbar-cart">
                 <Cart />

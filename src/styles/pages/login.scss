@@ -17,6 +17,20 @@
         }
     }
 
+    &-otp {
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+
+        &-input {
+            height: 42px;
+            width: 42px;
+            padding: 16px;
+            border: 1px solid #000000;
+            border-radius: 6px;
+        }
+    }
+
     &-container {
         display: flex;
         padding: 60px;

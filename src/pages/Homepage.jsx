@@ -25,6 +25,7 @@ import blog5 from "../assets/img/blog5.png";
 import blog6 from "../assets/img/blog6.png";
 
 export const Homepage = () => {
+
     const navigate = useNavigate();
     const products = [
         {
