@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #666666;
+  font-size: 14px;
+  padding: 0 120px;
+  padding-bottom: 14px;
+}
+.header-action-items {
+  display: flex;
+  justify-content: space-between;
+}
+.header-action-items-item {
+  padding: 0 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.header-action-items-item.border {
+  border-right: 1px solid #93762D;
+  border-left: 1px solid #93762D;
+}
